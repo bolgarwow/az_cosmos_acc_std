@@ -29,3 +29,16 @@ variable "throughput" {
     error_message = "Cosmos db throughput should be in increments of 100."
   }
 }
+#subscription
+variable "subscription_id" {
+  sensitive = true
+}
+variable "client_id" {
+  sensitive = true
+}
+variable "client_secret" {
+  sensitive = true
+}
+variable "tenant_id" {
+  sensitive = true
+}
